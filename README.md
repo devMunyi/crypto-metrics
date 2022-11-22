@@ -2,7 +2,7 @@
 
 # Project Name
 
-> This applications shows real-time data for cryptocurrencies current pricing and market activity. The data used is fetched from blockchain API.
+> This applications shows real-time data for cryptocurrencies current market pricing and activity. The data used is fetched from blockchain API.
 
 ## Built With
 
