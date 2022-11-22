@@ -12,15 +12,15 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://travelers-hub-space.netlify.app/)
+[Live Demo Link](https://cryptocurrencies-metrics.netlify.app/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
 
 - Open your terminal or command line
-- Run `git clone https://github.com/devMunyi/space-travelers-hub` to have a copy on your computer
-- After the clone, type in the command `cd space-travelers-hub` to access the directory on the terminal
+- Run `git clone https://github.com/devMunyi/crypto-metrics` to have a copy on your computer
+- After the clone, type in the command `cd crypto-metrics` to access the directory on the terminal
 - run `npm install` to install dependencies.
 - Run `npm run start` and it will load a live server in http://localhost:3000/
 
