@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CryptoList Component correctly 1`] = `
+<div
+  className="row border headline"
+  style={
+    Object {
+      "boxShadow": "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+    }
+  }
+>
+  <div
+    className="col"
+    style={
+      Object {
+        "height": "200px",
+      }
+    }
+  >
+    <img
+      alt="CRYPTO"
+      className="img-fluid"
+      src="cryptos.png"
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="col d-flex justify-content-center align-items-center border-start"
+  >
+    <div
+      className="div"
+    >
+      <h4 />
+      <p
+        className="fw-normal"
+      >
+         
+        undefined usd
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Headline Component correctly 1`] = `
+<div
+  className="row border headline"
+  style={
+    Object {
+      "boxShadow": "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+    }
+  }
+>
+  <div
+    className="col"
+    style={
+      Object {
+        "height": "200px",
+      }
+    }
+  >
+    <img
+      alt="CRYPTO"
+      className="img-fluid"
+      src="cryptos.png"
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="col d-flex justify-content-center align-items-center border-start"
+  >
+    <div
+      className="div"
+    >
+      <h4 />
+      <p
+        className="fw-normal"
+      >
+         
+        undefined usd
+      </p>
+    </div>
+  </div>
+</div>
+`;
