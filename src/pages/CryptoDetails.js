@@ -5,6 +5,7 @@ import { SyncOutlined } from '@ant-design/icons';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { fetchSingleCrypto } from '../redux/actions';
 import Headline from '../components/Headline';
+/*eslint-disable */
 
 function CryptoDetails() {
   // get crypto id from dynamic route params
@@ -75,9 +76,7 @@ function CryptoDetails() {
                   Price
                 </td>
                 <td style={{ width: '20%', border: '2px solid white' }}>
-                  {cryptoDetails.priceUsd}
-                  {' '}
-                  usd
+                  {cryptoDetails.priceUsd} usd
                 </td>
                 <td style={{ width: '10%', border: '2px solid white' }}>
                   <a style={{ color: '#FFF' }} href={cryptoDetails.explorer}>
@@ -91,9 +90,7 @@ function CryptoDetails() {
                   changePercent24Hr
                 </td>
                 <td style={{ width: '20%', border: '2px solid white' }}>
-                  {cryptoDetails.changePercent24Hr}
-                  {' '}
-                  usd
+                  {cryptoDetails.changePercent24Hr} usd
                 </td>
                 <td style={{ width: '10%', border: '2px solid white' }}>
                   <a style={{ color: '#FFF' }} href={cryptoDetails.explorer}>

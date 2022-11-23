@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export const FETCH_CRYPTOS = 'crypto_list';
 export const FETCH_SINGLE_CRYPTO_DETAILS = 'crypto_details';
+export const GET_CRYPTO_COUNT = 'crypto_count';
 
 // set api url
 const url = 'https://api.coincap.io/v2/assets';
@@ -20,5 +21,6 @@ export const fetchSingleCrypto = createAsyncThunk(
     const { data: result } = await axios(`${url}/${id}`);
 
     return result.data;
-  },
+    // eslint-disable-next-line comma-dangle
+  }
 );

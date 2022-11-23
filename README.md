@@ -10,11 +10,13 @@
 - Frameworks: ReactJs, Bootstrap
 - Technologies used: Redux, React Redux, Redux Toolkit, REST API
 
+## Getting Started
+
 ## Live Demo (if available)
 
 [Live Demo Link](https://cryptocurrencies-metrics.netlify.app/)
 
-## Getting Started
+#### Project documentation [Video](https://www.loom.com/share/57149638acb848afb0859154f0135247)
 
 To get a local copy up and running follow these simple example steps:
 

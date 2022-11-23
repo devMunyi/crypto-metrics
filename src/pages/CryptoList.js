@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { fetchCryptos } from '../redux/actions';
 import Headline from '../components/Headline';
 import truncateNum from '../helpers';
+/*eslint-disable */
 
 function CryptoList() {
   // search values
@@ -24,15 +25,11 @@ function CryptoList() {
 
   const cryptoCount = cryptoList.length;
 
-  // const handleSearchFilter = () => {
-  //   cryptoList = cryptoList.filter(({ name }) => name === searchInput);
-  // };
-
   const handleSearchChange = (e) => {
     setInputSearch(e.target.value.trim());
-
-    console.log(searchInput);
   };
+
+  const regExObj = new RegExp(searchInput, 'ig');
 
   return (
     <div className="container">
@@ -48,49 +45,78 @@ function CryptoList() {
           <Headline page="list" cryptoCount={cryptoCount} cryptoDetails={{}} />
 
           <div className="row pt-4 pb-4 container fw-normal">
-            <div className="col">
+            <div className="col-md-8 col-sm-10">
               {' '}
               <input
                 onChange={handleSearchChange}
+                value={searchInput}
                 name="search"
                 className="form-control"
                 type="search"
                 placeholder="Type name or price value..."
               />
             </div>
-            <div className="col">
-              <button type="button" className="btn btn-outline-light">
-                Search
-              </button>
-            </div>
+            <div className="col-md-4 col-sm-2"></div>
           </div>
 
           <div className="grid-tmp">
-            {cryptoList.map((crypto) => (
-              <div key={crypto.id} className="grid-tmp-item p-2 text-end">
-                <div className="grid-item-top">
-                  <NavLink
-                    style={{ color: '#fff' }}
-                    to={`/details/${crypto.id}`}
-                  >
-                    <BsFillArrowRightCircleFill
-                      title="Click to view Details"
-                      role="presentation"
-                      className="hover"
-                    />
-                  </NavLink>
-                </div>
+            {searchInput.length > 0 &&
+              cryptoList
+                .filter(
+                  ({ name, priceUsd }) =>
+                    regExObj.test(name) === true ||
+                    regExObj.test(priceUsd) === true
+                )
+                .map((crypto) => (
+                  <div key={crypto.id} className="grid-tmp-item p-2 text-end">
+                    <div className="grid-item-top">
+                      <NavLink
+                        style={{ color: '#fff' }}
+                        to={`/details/${crypto.id}`}
+                      >
+                        <BsFillArrowRightCircleFill
+                          title="Click to view Details"
+                          role="presentation"
+                          className="hover"
+                        />
+                      </NavLink>
+                    </div>
 
-                <div className="grid-item-bottom fw-normal">
-                  <h4>{crypto.name.toUpperCase()}</h4>
-                  <p>
-                    {truncateNum(crypto.priceUsd, 8)}
-                    {' '}
-                    usd
-                  </p>
+                    <div className="grid-item-bottom fw-normal">
+                      <h4>{crypto.name}</h4>
+                      <p>
+                        {truncateNum(crypto.priceUsd, 8)}
+                        usd
+                      </p>
+                    </div>
+                  </div>
+                ))}
+
+            {searchInput.length === 0 &&
+              cryptoList.map((crypto) => (
+                <div key={crypto.id} className="grid-tmp-item p-2 text-end">
+                  <div className="grid-item-top">
+                    <NavLink
+                      style={{ color: '#fff' }}
+                      to={`/details/${crypto.id}`}
+                    >
+                      <BsFillArrowRightCircleFill
+                        title="Click to view Details"
+                        role="presentation"
+                        className="hover"
+                      />
+                    </NavLink>
+                  </div>
+
+                  <div className="grid-item-bottom fw-normal">
+                    <h4>{crypto.name}</h4>
+                    <p>
+                      {truncateNum(crypto.priceUsd, 8)}
+                      usd
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </>
       )}

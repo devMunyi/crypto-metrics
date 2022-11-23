@@ -5,6 +5,7 @@ const initialState = {
   cryptoList: [],
   cryptoDetails: {},
   isLoading: false,
+  cryptoCount: 0,
 };
 
 // reducer
