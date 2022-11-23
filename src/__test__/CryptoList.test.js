@@ -3,11 +3,12 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 import CryptoList from '../pages/CryptoList';
 
+/* eslint-disable comma-dangle */
 it('renders CryptoList Component correctly', () => {
   const tree = renderer.create(
     <Provider store={store}>
       <CryptoList />
-    </Provider>,
+    </Provider>
   );
   expect(tree).toMatchSnapshot();
 });
