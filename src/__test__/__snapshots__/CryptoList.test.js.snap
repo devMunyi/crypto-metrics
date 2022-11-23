@@ -54,7 +54,7 @@ exports[`renders CryptoList Component correctly 1`] = `
     className="row pt-4 pb-4 container fw-normal"
   >
     <div
-      className="col"
+      className="col-md-8 col-sm-10"
     >
        
       <input
@@ -63,18 +63,12 @@ exports[`renders CryptoList Component correctly 1`] = `
         onChange={[Function]}
         placeholder="Type name or price value..."
         type="search"
+        value=""
       />
     </div>
     <div
-      className="col"
-    >
-      <button
-        className="btn btn-outline-light"
-        type="button"
-      >
-        Search
-      </button>
-    </div>
+      className="col-md-4 col-sm-2"
+    />
   </div>
   <div
     className="grid-tmp"

@@ -7,7 +7,7 @@ import Headline from '../components/Headline';
 it('renders Headline Component correctly', () => {
   const tree = renderer.create(
     <Provider store={store}>
-      <Headline />
+      <Headline cryptoCount={0} cryptoDetails={{}} page="" />
     </Provider>
   );
   expect(tree).toMatchSnapshot();
