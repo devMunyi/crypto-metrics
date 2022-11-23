@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Crypto Metrics
 
-> This applications shows real-time data for cryptocurrencies current market pricing and activity. The data used is fetched from blockchain API.
+> This application shows real-time data for cryptocurrencies current market pricing and activity. The data used is fetched from blockchain API.
 
 ## Built With
 
@@ -10,14 +10,13 @@
 - Frameworks: ReactJs, Bootstrap
 - Technologies used: Redux, React Redux, Redux Toolkit, REST API
 
+## Live Demo
+[Please check live demo of the project](https://cryptocurrencies-metrics.netlify.app/)
+
+## Presentation
+[Watch my presentation video](https://www.loom.com/share/57149638acb848afb0859154f0135247)
+
 ## Getting Started
-
-## Live Demo (if available)
-
-[Live Demo Link](https://cryptocurrencies-metrics.netlify.app/)
-
-#### Project documentation [Video](https://www.loom.com/share/57149638acb848afb0859154f0135247)
-
 To get a local copy up and running follow these simple example steps:
 
 - Open your terminal or command line
@@ -45,9 +44,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to anyone whose code, images and icons were used in developing the project including:
+- [Stackoverflow](https://stackoverflow.com/)
+- [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- [Flaticon](https://www.flaticon.com/)
 
 ## 📝 License
 
