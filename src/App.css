@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+/* common  */
+.headline {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+nav {
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* listing page */
+.grid-tmp {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  grid-gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid-tmp-item {
+  min-height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+  background-color: #600;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid 1px gold;
+  gap: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-item-top {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hover {
+  cursor: pointer;
+}
+
+.grid-tmp-item:nth-child(4n),
+.grid-tmp-item:nth-of-type(4n+1) {
+  background: #f67280;
+}
+
+.grid-tmp-item:nth-child(4n+3),
+.grid-tmp-item:nth-child(4n+2) {
+  background: #cd5c5c;
+}
+
+/* Details Page */
+td {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+table {
+  width: 100%;
+  word-wrap: break-word;
+  table-layout: fixed;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f67280 !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #cd5c5c !important;
 }
