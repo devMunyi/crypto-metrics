@@ -34,6 +34,7 @@ function Headline({ page = '', cryptoDetails = {}, cryptoCount = 0 }) {
 Headline.propTypes = {
   page: PropTypes.string.isRequired,
   cryptoDetails: PropTypes.objectOf(PropTypes.string).isRequired,
+  // eslint-disable-next-line comma-dangle
   cryptoCount: PropTypes.number.isRequired,
 };
 

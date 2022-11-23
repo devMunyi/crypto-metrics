@@ -1,5 +1,6 @@
 import { FETCH_CRYPTOS, FETCH_SINGLE_CRYPTO_DETAILS } from '../actions';
 
+/* eslint-disable comma-dangle */
 // set initial state
 const initialState = {
   cryptoList: [],
