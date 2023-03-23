@@ -30,3 +30,17 @@ code {
     'Courier New',
     monospace;
 }
+
+.img-fluid {
+  height: auto !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 200px;
+}

@@ -8,11 +8,10 @@ function Headline({ page = '', cryptoDetails = {}, cryptoCount = 0 }) {
       className="row border headline"
       style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
     >
-      <div className="col" style={{ height: '200px' }}>
+      <div className="col img-container">
         <img
           src={cryptoImg}
           alt="CRYPTO"
-          style={{ width: '100%', height: '100%' }}
           className="img-fluid"
         />
       </div>
